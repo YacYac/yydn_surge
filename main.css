@@ -70,7 +70,7 @@ body {
 }
 
 .container {
-  margin: 0 20px 20px 20px;
+  padding: 40px 20px 40px 20px;
 }
 
 /*
@@ -95,6 +95,10 @@ h2 {
 .about p,
 .contact p {
   text-align: center;
+}
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*
@@ -132,12 +136,53 @@ h2 {
   =====================================================
 */
 
+.primary-header {
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
 .primary-header h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 10px;
 }
+.hero {
+  background: #3b8dcc;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 72px;
+  line-height: 80px;
+}
 
+/*
+  =====================================================
+  Sections
+  =====================================================
+*/
+
+.about {
+  background-color: #d14f53;
+  color: #fff;
+}
+.contact {
+  background-color: #000;
+  color: #fff;
+}
+.contact ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.contact li {
+  text-align: center;
+  padding: 10px 20px;
+}
+.contact i {
+  font-size: 72px;
+  line-height: 52px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
 /*
   =====================================================
   Footer
