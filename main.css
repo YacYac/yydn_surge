@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -110,7 +110,7 @@ a {
 .portfolio ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;;
+  justify-content: space-around;
 }
 .portfolio ul li {
   width: 300px;
@@ -152,6 +152,14 @@ a {
 .hero h1 {
   font-size: 72px;
   line-height: 80px;
+	display: block;
+}
+
+.hero img {
+	width: 500px;
+	height: 500px;
+	display: block;
+	margin: 0 auto;
 }
 
 /*
