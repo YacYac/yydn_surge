@@ -210,3 +210,57 @@ a {
 .primary-nav {
   display: none;
 }
+
+/*
+  ======================================================================
+  Clearfix
+  ======================================================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  =====================================================
+  Media Queries
+  =====================================================
+*/
+
+@media (min-width: 680px) {
+	.logo {
+		float: left;
+	}
+	.primary-nav {
+		display: inherit;
+		margin-right: 60px;
+		text-transform: uppercase;
+		text-align: right;
+	}
+	.primary-nav li {
+		display: inline-block;
+		margin: 38px 10px 0;
+		vertical-align: baseline;
+	}
+	.primary-nav li:last-child {
+		margin-right: 0;
+	}
+	.primary-nav a {
+		font-family: 'Cabin Sketch', cursive;
+		color: black;
+		font-size: 32px;
+		line-height: 28px;
+		letter-spacing: .5px;
+	}
+}
