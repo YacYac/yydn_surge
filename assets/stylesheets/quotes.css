@@ -1,0 +1,38 @@
+.app {
+  background: green;
+  min-height: 500px;
+}
+
+.quote-box {
+  background: white;
+  border-radius: 5px;
+
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 200px;
+
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.quote-box h1 {
+  display: block;
+  padding: 20px 0px;
+}
+
+.quote-box blockquote {
+  display: block;
+  margin-left: 20px;
+  padding: 1em 0 1em 12px;
+  border-left: 6px solid #ccc;
+}
+
+.quote-box button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: green;
+  float: right;
+  margin-right: 20px;
+}
