@@ -23,6 +23,7 @@
 .quote-box blockquote {
   display: block;
   margin-left: 20px;
+  margin-right: 20px;
   padding: 1em 0 1em 12px;
   border-left: 6px solid #ccc;
 }
@@ -35,4 +36,10 @@
   background-color: green;
   float: right;
   margin-right: 20px;
+  border-radius: 5px;
+  font: 300 16px/22px "Cabin", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.citation {
+  text-align: right;
 }

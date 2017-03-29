@@ -6,18 +6,31 @@ var colorsArray = [
   "#B243FF"
 ]
 
+var quoteArray = [
+  ["Test Quote 1","Person 1"],
+  ["Test Quote 2","Person 2"],
+  ["Test Quote 3","Person 3"],
+  ["Test Quote 4","Person 4"],
+  ["Test Quote 5","Person 5"],
+];
+
 function app() {
   var quoteButton = document.querySelector('.get-quote');
-  quoteButton.addEventListener('click', changeBackground);
+  quoteButton.addEventListener('click', nextQuote);
 
-  changeBackground();
+  nextQuote();
 }
 
-function changeBackground() {
+function nextQuote() {
   var app = document.querySelector('.app');
   var button = document.querySelector('.get-quote');
   var heading = document.querySelector('.app h1');
   var randomColor = Math.floor( Math.random() * colorsArray.length );
+  var randomQuote = Math.floor( Math.random() * quoteArray.length );
+
+  document.querySelector('.quote').innerHTML = quoteArray[ randomQuote ][0];
+  document.querySelector('.person').innerHTML = quoteArray[ randomQuote ][1];
+
   // console.log(randomColor);
   app.style.backgroundColor = colorsArray[ randomColor ];
   button.style.backgroundColor = colorsArray[ randomColor ];
