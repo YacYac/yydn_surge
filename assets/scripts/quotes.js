@@ -121,9 +121,11 @@ function nextQuote() {
   var heading = document.querySelector('.app h1');
   var color = colorMachine.getNewColor();
   var quote = quoteMachine.getNewQuote();
+  var quoteURI = "https://twitter.com/intent/tweet/?text=" + encodeURIComponent( quote.quote + "\n- " + quote.citation );
 
   document.querySelector('.quote').innerHTML = quote.quote;
   document.querySelector('.person').innerHTML = quote.citation;
+  document.querySelector('.app a').setAttribute("href", quoteURI);
 
   // console.log(randomColor);
   app.style.backgroundColor = color;
