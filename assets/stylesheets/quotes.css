@@ -4,6 +4,7 @@
 }
 
 .quote-box {
+  display: block;
   background: white;
   border-radius: 5px;
 
@@ -13,11 +14,12 @@
 
   margin: 0 auto;
   margin-top: 40px;
+  padding-bottom: 70px;
 }
 
 .quote-box h1 {
   display: block;
-  padding: 20px 0px;
+  padding-bottom: 20px;
 }
 
 .quote-box blockquote {
