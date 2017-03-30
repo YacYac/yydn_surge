@@ -123,12 +123,17 @@ a {
   color: #eee;
   font-size: 22px;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 270px
+	position: relative;
+	z-index: 2;
+	top: 260px;
 }
 
-
+.portfolio li img {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	z-index: 1;
+}
 
 /*
   =====================================================
