@@ -117,7 +117,7 @@ function app() {
 
 function nextQuote() {
   var app = document.querySelector('.app');
-  var button = document.querySelector('.get-quote');
+  var buttons = document.querySelectorAll('.btn');
   var heading = document.querySelector('.app h1');
   var color = colorMachine.getNewColor();
   var quote = quoteMachine.getNewQuote();
@@ -127,7 +127,9 @@ function nextQuote() {
 
   // console.log(randomColor);
   app.style.backgroundColor = color;
-  button.style.backgroundColor = color;
+  for ( var i = 0; i < buttons.length; i++ ) {
+    buttons[i].style.backgroundColor = color;
+  }
   heading.style.color = color;
 }
 
